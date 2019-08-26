@@ -1,4 +1,32 @@
 # Chat-App
 Chat-Application using Nodejs
 
-Project in Process.
+## To view the project
+
+
+## Feature
+
+
+## Screenshots 
+*   1
+        <img src="" />
+
+*   2
+        <img src="" />
+
+
+## Updation
+
+
+## Requirements
+* Web browse
+
+
+## Contributing
+I welcome pull requests, bug fixes and issue reports. Before proposing a change, please discuss your change by raising an issue.
+
+
+## Developer 
+* **[Sumit Yadav](https://www.linkedin.com/in/sumiie24/)**
+
+
