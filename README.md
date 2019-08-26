@@ -26,10 +26,6 @@ Chat-Application using Nodejs
 I welcome pull requests, bug fixes and issue reports. Before proposing a change, please discuss your change by raising an issue.
 
 
-## License
-License under the [MIT License](LICENSE).
-
-
 ## Developer 
 * **[Sumit Yadav](https://www.linkedin.com/in/sumiie24/)**
 
