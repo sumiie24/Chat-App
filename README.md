@@ -12,7 +12,7 @@ Chat-Application using Nodejs
         <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
 
 *   2
-        <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
+        <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/chat.png" />
 
 
 ## Updation
