@@ -9,10 +9,10 @@ Chat-Application using Nodejs
 
 ## Screenshots 
 *   1
-        <img src="" />
+        <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
 
 *   2
-        <img src="" />
+        <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
 
 
 ## Updation
