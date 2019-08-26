@@ -19,7 +19,7 @@ Chat-Application using Nodejs
 
 
 ## Requirements
-* Web browse
+* Web browser
 
 
 ## Contributing
