@@ -9,13 +9,13 @@ Chat-Application using Nodejs
 
 ## Screenshots 
 * Creating Room- Entering Name and Room.
-<img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
+  <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
 
 * Users
-<img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/users.png" />
+  <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/users.png" />
 
 * Chatting
-<img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/chat.png" />
+  <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/chat.png" />
 
 ## Updation
 
