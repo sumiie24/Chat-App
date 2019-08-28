@@ -2,18 +2,20 @@
 Chat-Application using Nodejs
 
 ## To view the project
-
+* Website link -> **[https://sumitchatapp.herokuapp.com](https://sumitchatapp.herokuapp.com)**
 
 ## Feature
 
 
 ## Screenshots 
-*   1
-        <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
+* Creating Room- Entering Name and Room.
+<img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/login.png" />
 
-*   2
-        <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/chat.png" />
+* Users
+<img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/users.png" />
 
+* Chatting
+<img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/chat.png" />
 
 ## Updation
 
