@@ -30,8 +30,12 @@ io.on('connection' ,(socket)=>{ //socket is an object and it contains informatio
 
         socket.join(user.room) //join the room
 
-        socket.emit('message', generateMessage('Welcome!')) // someone joining and sending welcome message for every new connection
-        socket.broadcast.to(user.room).emit('message', generateMessage(`${user.username} has joined!`)) // emit to room
+        socket.emit('message', generateMessage('Admin','Welcome!')) // someone joining and sending welcome message for every new connection
+        socket.broadcast.to(user.room).emit('message', generateMessage('Admin',`${user.username} has joined!`)) // emit to room
+        io.to(user.room).emit('roomData', {
+            room: user.room,
+            users: getUsersInRoom(user.room)
+        })
 
         //socket.emit, io.emit, socket.broadcast.emit
         // io.to.emit, socket.broadcast.to.emit 
@@ -41,17 +45,22 @@ io.on('connection' ,(socket)=>{ //socket is an object and it contains informatio
     socket.on('sendMessage',(message, callback) => {
         const filter = new Filter()
 
+        const user = getUser(socket.id)
+
         if(filter.isProfane(message)){
             return callback('Profanity is not allowed!')
         }
 
-        io.to('webroom').emit('message', generateMessage(message)) //now sending to every connected client
+        io.to(user.room).emit('message', generateMessage(user.username, message)) //now sending to every connected client
         callback()    
     })
 
     //for location
     socket.on('sendLocation', (coords, callback)=>{
-        io.emit('locationMessage', generateLocationMessage(`https://google.com/maps?q=${coords.latitude},${coords.longitude}`))
+
+        const user= getUser(socket.id)
+
+        io.to(user.room).emit('locationMessage', generateLocationMessage(user.username, `https://google.com/maps?q=${coords.latitude},${coords.longitude}`))
         callback()
     }) 
 
@@ -59,7 +68,12 @@ io.on('connection' ,(socket)=>{ //socket is an object and it contains informatio
         const user = removeUser(socket.id)
 
         if(user){
-            io.to(user.room).emit('message', generateMessage(`${user.username} has left!`))
+            io.to(user.room).emit('message', generateMessage('Admin', `${user.username} has left!`))
+            
+            io.to(user.room).emit('roomData', {
+                room: user.room,
+                users: getUsersInRoom(user.room)
+            })
         }
     })
 })
