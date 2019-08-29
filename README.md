@@ -17,9 +17,6 @@ Chat-Application using Nodejs
 * Chatting
   <img src="https://github.com/sumiie24/Chat-App/blob/master/screenshots/chat.png" />
 
-## Updation
-
-
 ## Requirements
 * Web browser
 
